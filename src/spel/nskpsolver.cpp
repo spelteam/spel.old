@@ -83,7 +83,10 @@ vector<Solvlet> NSKPSolver::solve(Sequence& sequence, map<string, float>  params
     //progressFunc(1.0);
 
 
-    sequence.setFrames(propagatedFrames);
+    sequence.setFrames(propagatedFrames); //set the new frames to sequence
+
+    for(auto p : propagatedFrames) //delete the frame vector as it is no longer being used
+        delete p;
 
     if(params.at("withTLPS"))
     {

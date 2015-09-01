@@ -53,7 +53,11 @@ namespace SPEL
 
   vector<Frame*> Sequence::getFrames() const
   {
-    return frames;
+      vector<Frame*> frames_;
+
+      for (auto f : frames)
+        frames_.push_back(f->clone(new Frame()));
+    return frames_;
   }
 
   void Sequence::setFrames(const vector<Frame *> _frames)
