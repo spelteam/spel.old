@@ -1,5 +1,4 @@
 !include "MUI2.nsh"
-!include "LogicLib.nsh"
 
 ; Define section
 !define ProgramName        "Skeleton Pose Estimation Library"
@@ -8,7 +7,6 @@
 !define FullInstType       "Full"
 !define LibrarySection     "SPEL library"
 !define SolverTestsSection "Solver Tests"
-!define TestDataSection    "Test Data (http://humaneva.is.tue.mpg.de/)"
 
 SetCompress force
 SetDateSave on
@@ -80,23 +78,6 @@ SectionIn 1
 
 SetOutPath $INSTDIR\solverTests
 File /r "..\build\utils\solverTests\Release\*"
-
-SectionEnd
-
-Section "${TestDataSection}"
-
-SectionIn 1
-
-SetOutPath $TEMP
-
-NSISdl::download https://github.com/spelteam/spel/releases/download/1.0.0.0/HE_Box_1_S2_C1.zip $TEMP\HE_Box_1_S2_C1.zip
-Pop $0
-${If} $0 == "success"
-	SetOutPath $INSTDIR\TestData
-	ZipDLL::extractall $TEMP\HE_Box_1_S2_C1.zip $INSTDIR\TestData
-${Else}
-	MessageBox mb_iconstop "Error: $0"
-${EndIf}
 
 SectionEnd
 
