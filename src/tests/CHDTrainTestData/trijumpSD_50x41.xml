@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<Project name="trijumpSDfull" imgFolderPath="./seq/" maskFolderPath="./mask/" camFolderPath="./cam/" allowScaling="true"  simMatPath="" exportPath="">
+ <BodyJoints>
+  <BodyJoint id="0" name="Lower Back"/>
+  <BodyJoint id="1" name="Neck Bottom"/>
+  <BodyJoint id="2" name="Left Hip"/>
+  <BodyJoint id="3" name="Right Hip"/>
+  <BodyJoint id="4" name="Head Bottom"/>
+  <BodyJoint id="5" name="Left Shoulder"/>
+  <BodyJoint id="6" name="Right Shoulder"/>
+  <BodyJoint id="7" name="Left Knee"/>
+  <BodyJoint id="8" name="Right Knee"/>
+  <BodyJoint id="9" name="Head Top"/>
+  <BodyJoint id="10" name="Left Elbow"/>
+  <BodyJoint id="11" name="Right Elbow"/>
+  <BodyJoint id="12" name="Left Ankle"/>
+  <BodyJoint id="13" name="Right Ankle"/>
+  <BodyJoint id="14" name="Left Wrist"/>
+  <BodyJoint id="15" name="Right Wrist"/>
+  <BodyJoint id="16" name="Left Toes"/>
+  <BodyJoint id="17" name="Right Toes"/>
+ </BodyJoints>
+
+ <BodyParts>
+  <BodyPart id="0" name="Root" parentJointId="0" childJointId="1" expectedDistance="0" lwRatio="1.9"/>
+  <BodyPart id="1" name="Left Hip" parentJointId="0" childJointId="2" expectedDistance="0" lwRatio="3.2"/>
+  <BodyPart id="2" name="Right Hip" parentJointId="0" childJointId="3" expectedDistance="0" lwRatio="3.2"/>
+  <BodyPart id="3" name="Neck" parentJointId="1" childJointId="4" expectedDistance="0" lwRatio="1.454"/>
+  <BodyPart id="4" name="Left Clavicle" parentJointId="1" childJointId="5" expectedDistance="0" lwRatio="3.4"/>
+  <BodyPart id="5" name="Right Clavicle" parentJointId="1" childJointId="6" expectedDistance="0" lwRatio="3.4"/>
+  <BodyPart id="6" name="Left Femur" parentJointId="2" childJointId="7" expectedDistance="0" lwRatio="3.059"/>
+  <BodyPart id="7" name="Right Femur" parentJointId="3" childJointId="8" expectedDistance="0" lwRatio="3.059"/>
+  <BodyPart id="8" name="Head" parentJointId="4" childJointId="9" expectedDistance="0" lwRatio="1.125"/>
+  <BodyPart id="9" name="Left Humerus" parentJointId="5" childJointId="10" expectedDistance="0" lwRatio="3.0"/>
+  <BodyPart id="10" name="Right Humerus" parentJointId="6" childJointId="11" expectedDistance="0" lwRatio="3.0"/>
+  <BodyPart id="11" name="Left Tibia" parentJointId="7" childJointId="12" expectedDistance="0" lwRatio="4.727"/>
+  <BodyPart id="12" name="Right Tibia" parentJointId="8" childJointId="13" expectedDistance="0" lwRatio="4.727"/>
+  <BodyPart id="13" name="Left Radius" parentJointId="10" childJointId="14" expectedDistance="0" lwRatio="3.75"/>
+  <BodyPart id="14" name="Right Radius" parentJointId="11" childJointId="15" expectedDistance="0" lwRatio="3.75"/>
+  <BodyPart id="15" name="Left Metatarsal" parentJointId="12" childJointId="16" expectedDistance="0" lwRatio="3.5"/>
+  <BodyPart id="16" name="Right Metatarsal" parentJointId="13" childJointId="17" expectedDistance="0" lwRatio="3.5"/>
+ </BodyParts>
+
+ <Frames>
+  <Frame id="0" imgPath="0000_50x41.png" maskPath="mask0000_50x41.pgm" camPath="0001_50x40.camu" isKeyframe="true" gpX="" gpY="">
+   <BodyJoints>
+    <BodyJoint x="24" y="21" depthSign="false" id="0"/>
+    <BodyJoint x="25" y="8" depthSign="false" id="1"/>
+    <BodyJoint x="26" y="23" depthSign="false" id="2"/>
+    <BodyJoint x="20" y="22" depthSign="true" id="3"/>
+    <BodyJoint x="25" y="6" depthSign="false" id="4"/>
+    <BodyJoint x="29" y="10" depthSign="false" id="5"/>
+    <BodyJoint x="22" y="8" depthSign="true" id="6"/>
+    <BodyJoint x="32" y="32" depthSign="false" id="7"/>
+    <BodyJoint x="9" y="24" depthSign="true" id="8"/>
+    <BodyJoint x="25" y="0" depthSign="false" id="9"/>
+    <BodyJoint x="20" y="13" depthSign="false" id="10"/>
+    <BodyJoint x="26" y="15" depthSign="true" id="11"/>
+    <BodyJoint x="44" y="34" depthSign="false" id="12"/>
+    <BodyJoint x="8" y="36" depthSign="true" id="13"/>
+    <BodyJoint x="12" y="7" depthSign="false" id="14"/>
+    <BodyJoint x="25" y="25" depthSign="false" id="15"/>
+    <BodyJoint x="46" y="39" depthSign="false" id="16"/>
+    <BodyJoint x="2" y="38" depthSign="true" id="17"/>
+   </BodyJoints>
+   <BodyParts>
+    <BodyPart id="0" isOccluded="false"/>
+    <BodyPart id="1" isOccluded="false"/>
+    <BodyPart id="2" isOccluded="false"/>
+    <BodyPart id="3" isOccluded="false"/>
+    <BodyPart id="4" isOccluded="false"/>
+    <BodyPart id="5" isOccluded="true"/>
+    <BodyPart id="6" isOccluded="false"/>
+    <BodyPart id="7" isOccluded="false"/>
+    <BodyPart id="8" isOccluded="false"/>
+    <BodyPart id="9" isOccluded="false"/>
+    <BodyPart id="10" isOccluded="true"/>
+    <BodyPart id="11" isOccluded="false"/>
+    <BodyPart id="12" isOccluded="false"/>
+    <BodyPart id="13" isOccluded="false"/>
+    <BodyPart id="14" isOccluded="true"/>
+    <BodyPart id="15" isOccluded="false"/>
+    <BodyPart id="16" isOccluded="false"/>
+   </BodyParts>
+  </Frame>
+  <Frame id="1" imgPath="0000_50x41.png" maskPath="mask0000_50x41.pgm" camPath="0000_50x41.camu" isKeyframe="false" gpX="" gpY=""/>
+  <Frame id="2" imgPath="0000_50x41.png" maskPath="mask0000_50x41.pgm" camPath="0000_50x41.camu" isKeyframe="true" gpX="" gpY="">
+   <BodyJoints>
+    <BodyJoint x="24" y="21" depthSign="false" id="0"/>
+    <BodyJoint x="25" y="8" depthSign="false" id="1"/>
+    <BodyJoint x="26" y="23" depthSign="false" id="2"/>
+    <BodyJoint x="20" y="22" depthSign="true" id="3"/>
+    <BodyJoint x="25" y="6" depthSign="false" id="4"/>
+    <BodyJoint x="29" y="10" depthSign="false" id="5"/>
+    <BodyJoint x="22" y="8" depthSign="true" id="6"/>
+    <BodyJoint x="32" y="32" depthSign="false" id="7"/>
+    <BodyJoint x="9" y="24" depthSign="true" id="8"/>
+    <BodyJoint x="25" y="0" depthSign="false" id="9"/>
+    <BodyJoint x="20" y="13" depthSign="false" id="10"/>
+    <BodyJoint x="26" y="15" depthSign="true" id="11"/>
+    <BodyJoint x="44" y="34" depthSign="false" id="12"/>
+    <BodyJoint x="8" y="36" depthSign="true" id="13"/>
+    <BodyJoint x="12" y="7" depthSign="false" id="14"/>
+    <BodyJoint x="25" y="25" depthSign="false" id="15"/>
+    <BodyJoint x="46" y="39" depthSign="false" id="16"/>
+    <BodyJoint x="2" y="38" depthSign="true" id="17"/>
+   </BodyJoints>
+   <BodyParts>
+    <BodyPart id="0" isOccluded="false"/>
+    <BodyPart id="1" isOccluded="false"/>
+    <BodyPart id="2" isOccluded="false"/>
+    <BodyPart id="3" isOccluded="false"/>
+    <BodyPart id="4" isOccluded="false"/>
+    <BodyPart id="5" isOccluded="true"/>
+    <BodyPart id="6" isOccluded="false"/>
+    <BodyPart id="7" isOccluded="false"/>
+    <BodyPart id="8" isOccluded="false"/>
+    <BodyPart id="9" isOccluded="false"/>
+    <BodyPart id="10" isOccluded="true"/>
+    <BodyPart id="11" isOccluded="false"/>
+    <BodyPart id="12" isOccluded="false"/>
+    <BodyPart id="13" isOccluded="false"/>
+    <BodyPart id="14" isOccluded="true"/>
+    <BodyPart id="15" isOccluded="false"/>
+    <BodyPart id="16" isOccluded="false"/>
+   </BodyParts>
+  </Frame>
+</Frames>
+</Project>

@@ -1,0 +1,20 @@
+IF ( WIN32 )
+  SET ( WIN32_STYLE_FIND 1 )
+ENDIF ()
+IF ( MINGW )
+  SET( WIN32_STYLE_FIND 0 )
+  SET( UNIX_STYLE_FIND 1 )
+ENDIF ()
+IF ( UNIX )
+  SET ( UNIX_STYLE_FIND 1 )
+ENDIF ()
+
+IF ( UNIX_STYLE_FIND )
+  FIND_PATH ( Eigen3_INCLUDE_DIR NAMES signature_of_eigen3_matrix_library PATH_SUFFIXES eigen3 )
+ELSEIF ( WIN32_STYLE_FIND )
+  FIND_PATH ( Eigen3_INCLUDE_DIR NAMES signature_of_eigen3_matrix_library PATHES C:/eigen3 )
+ENDIF ()
+INCLUDE ( FindPackageHandleStandardArgs )
+FIND_PACKAGE_HANDLE_STANDARD_ARGS ( Eigen3 DEFAULT_MSG Eigen3_INCLUDE_DIR )
+
+
